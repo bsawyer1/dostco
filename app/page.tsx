@@ -192,8 +192,35 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Meet the Owner Section */}
+        <section className="w-full py-16 md:py-20 bg-white">
+          <div className="container px-4 md:px-6">
+            <div className="mx-auto max-w-4xl">
+              <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div className="relative w-48 h-48 md:w-56 md:h-56 flex-shrink-0 overflow-hidden rounded-full border-4 border-slate-100">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7921.JPG-1SfetJKnAI5GPKIDnqu1AnjW5Y0CUH.jpeg"
+                    alt="Caleb Dostie, Owner of Dostco Construction"
+                    fill
+                    className="object-cover object-top"
+                  />
+                </div>
+                <div className="text-center md:text-left space-y-3">
+                  <p className="text-sm font-medium text-slate-500 tracking-widest uppercase">Meet the Owner</p>
+                  <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl text-[#0d2b5c]">
+                    Caleb Dostie
+                  </h2>
+                  <p className="text-sm text-slate-600 leading-relaxed tracking-wide max-w-md">
+                    With a passion for quality craftsmanship and years of hands-on experience, Caleb founded Dostco Construction to bring exceptional building services to Maine homeowners. He personally oversees every project to ensure the highest standards are met.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
-        <section id="contact" className="w-full py-16 md:py-20 bg-white">
+        <section id="contact" className="w-full py-16 md:py-20 bg-zinc-50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-3 text-center mb-10">
               <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-[#0d2b5c]">
