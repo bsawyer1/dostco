@@ -73,37 +73,36 @@ export default function HomePage() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="w-full py-16 md:py-20 bg-zinc-50">
+        <section id="services" className="w-full py-14 md:py-16 bg-[#0d2b5c]">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-3 text-center mb-10">
-              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-[#0d2b5c]">
+            <div className="flex flex-col items-center justify-center space-y-2 text-center mb-8">
+              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl text-white">
                 Our Services
               </h2>
-              <p className="max-w-[600px] text-slate-600 md:text-base leading-relaxed tracking-wide">
-                We provide comprehensive construction services to meet all your needs
+              <p className="max-w-[500px] text-white/70 text-sm md:text-base leading-relaxed">
+                Comprehensive construction services to meet all your needs
               </p>
             </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
-              <div className="group flex flex-col items-start space-y-3 p-6 border border-slate-200 bg-white hover:border-slate-300 transition-all duration-300">
-                <Home className="h-6 w-6 text-slate-400 group-hover:text-[#0d2b5c] transition-colors duration-300" />
-                <h3 className="text-lg font-semibold text-[#0d2b5c] tracking-tight">Interior & Exterior Remodeling</h3>
-                <p className="text-sm text-slate-600 leading-relaxed tracking-wide">
-                  Transform your space with our professional remodeling services for both interior and exterior
-                  projects.
+            <div className="mx-auto grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-3">
+              <div className="group flex flex-col items-center text-center space-y-2 p-5 bg-white/10 hover:bg-white/15 transition-all duration-300 rounded-sm">
+                <Home className="h-6 w-6 text-white/80 group-hover:text-white transition-colors duration-300" />
+                <h3 className="text-base font-semibold text-white tracking-tight">Remodeling</h3>
+                <p className="text-xs text-white/60 leading-relaxed">
+                  Interior and exterior renovation services
                 </p>
               </div>
-              <div className="group flex flex-col items-start space-y-3 p-6 border border-slate-200 bg-white hover:border-slate-300 transition-all duration-300">
-                <Building2 className="h-6 w-6 text-slate-400 group-hover:text-[#0d2b5c] transition-colors duration-300" />
-                <h3 className="text-lg font-semibold text-[#0d2b5c] tracking-tight">New Construction</h3>
-                <p className="text-sm text-slate-600 leading-relaxed tracking-wide">
-                  Build your dream home or business from the ground up with our expert new construction services.
+              <div className="group flex flex-col items-center text-center space-y-2 p-5 bg-white/10 hover:bg-white/15 transition-all duration-300 rounded-sm">
+                <Building2 className="h-6 w-6 text-white/80 group-hover:text-white transition-colors duration-300" />
+                <h3 className="text-base font-semibold text-white tracking-tight">New Construction</h3>
+                <p className="text-xs text-white/60 leading-relaxed">
+                  Build your dream home from the ground up
                 </p>
               </div>
-              <div className="group flex flex-col items-start space-y-3 p-6 border border-slate-200 bg-white hover:border-slate-300 transition-all duration-300">
-                <Paintbrush className="h-6 w-6 text-slate-400 group-hover:text-[#0d2b5c] transition-colors duration-300" />
-                <h3 className="text-lg font-semibold text-[#0d2b5c] tracking-tight">Finish Work</h3>
-                <p className="text-sm text-slate-600 leading-relaxed tracking-wide">
-                  Add the perfect finishing touches to your project with our detailed and precise finish work services.
+              <div className="group flex flex-col items-center text-center space-y-2 p-5 bg-white/10 hover:bg-white/15 transition-all duration-300 rounded-sm">
+                <Paintbrush className="h-6 w-6 text-white/80 group-hover:text-white transition-colors duration-300" />
+                <h3 className="text-base font-semibold text-white tracking-tight">Finish Work</h3>
+                <p className="text-xs text-white/60 leading-relaxed">
+                  Detailed and precise finishing touches
                 </p>
               </div>
             </div>
@@ -111,19 +110,19 @@ export default function HomePage() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="w-full py-16 md:py-20 bg-white">
+        <section id="projects" className="w-full py-14 md:py-16 bg-zinc-50">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-3 text-center mb-10">
-              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-[#0d2b5c]">
+            <div className="flex flex-col items-center justify-center space-y-2 text-center mb-8">
+              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl text-[#0d2b5c]">
                 Our Projects
               </h2>
-              <p className="max-w-[600px] text-slate-600 md:text-base leading-relaxed tracking-wide">
-                Take a look at some of our recent construction and remodeling projects
+              <p className="max-w-[500px] text-slate-600 text-sm md:text-base leading-relaxed">
+                Recent construction and remodeling projects
               </p>
             </div>
-            <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="mx-auto grid max-w-5xl grid-cols-2 gap-3 md:gap-4">
               {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="group relative aspect-[4/3] overflow-hidden">
+                <div key={i} className="group relative aspect-[4/3] overflow-hidden rounded-sm">
                   <Image
                     src={
                       i === 1
@@ -136,25 +135,25 @@ export default function HomePage() {
                     }
                     alt={
                       i === 1
-                        ? "Cedar-sided ranch home renovation with new windows and deck"
+                        ? "Cedar-sided ranch home renovation"
                         : i === 2
-                          ? "A-frame style home with large windows and wraparound deck"
+                          ? "A-frame home with wraparound deck"
                           : i === 3
-                            ? "Interior sunroom with vaulted ceiling and panoramic windows"
-                            : "Custom deck with black railings and natural wood treads"
+                            ? "Interior sunroom with vaulted ceiling"
+                            : "Custom deck with black railings"
                     }
                     fill
-                    className="object-cover transition-all duration-500 group-hover:scale-105 group-hover:opacity-90"
+                    className="object-cover transition-all duration-500 group-hover:scale-105"
                   />
                 </div>
               ))}
             </div>
-            <div className="mt-10 flex justify-center">
+            <div className="mt-8 flex justify-center">
               <Link href="/projects">
                 <Button 
                   variant="outline"
-                  size="lg"
-                  className="border-[#0d2b5c] text-[#0d2b5c] hover:bg-[#0d2b5c] hover:text-white px-8 py-5 text-sm font-medium tracking-wide transition-all duration-300"
+                  size="default"
+                  className="border-[#0d2b5c] text-[#0d2b5c] hover:bg-[#0d2b5c] hover:text-white text-sm font-medium tracking-wide transition-all duration-300"
                 >
                   View All Projects
                 </Button>
@@ -164,27 +163,24 @@ export default function HomePage() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="w-full py-16 md:py-20 bg-zinc-50">
+        <section id="about" className="w-full py-14 md:py-16 bg-white">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="space-y-4">
-                <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-[#0d2b5c]">
+            <div className="grid gap-8 lg:grid-cols-2 lg:gap-10 items-center">
+              <div className="space-y-3 order-2 lg:order-1">
+                <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl text-[#0d2b5c]">
                   About Dostco Construction
                 </h2>
-                <p className="text-slate-600 md:text-base leading-relaxed tracking-wide">
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed">
                   Dostco Construction LLC is a leading Maine construction firm specializing in residential remodeling
-                  and new construction. We deliver exceptional craftsmanship across interior and exterior renovations,
-                  with meticulous attention to detail in every project. Our commitment to excellence, transparent
-                  communication, and client satisfaction has established us as a trusted partner in transforming homes
-                  throughout Maine. Contact us to bring your vision to life.
+                  and new construction. We deliver exceptional craftsmanship with meticulous attention to detail. Our commitment to excellence and client satisfaction has established us as a trusted partner in transforming homes throughout Maine.
                 </p>
               </div>
-              <div className="relative group overflow-hidden">
+              <div className="relative group overflow-hidden rounded-sm order-1 lg:order-2">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9wZvd5YcHltzMJ6UiVdILDj2Q7LpZS.png"
-                  alt="Interior renovation project in progress by Dostco Construction"
+                  alt="Interior renovation project by Dostco Construction"
                   width={600}
-                  height={450}
+                  height={400}
                   className="w-full object-cover transition-all duration-500 group-hover:scale-105"
                 />
               </div>
@@ -193,11 +189,11 @@ export default function HomePage() {
         </section>
 
         {/* Meet the Owner Section */}
-        <section className="w-full py-16 md:py-20 bg-white">
+        <section className="w-full py-14 md:py-16 bg-[#0d2b5c]/5">
           <div className="container px-4 md:px-6">
-            <div className="mx-auto max-w-4xl">
-              <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-                <div className="relative w-48 h-48 md:w-56 md:h-56 flex-shrink-0 overflow-hidden rounded-full border-4 border-slate-100">
+            <div className="mx-auto max-w-3xl">
+              <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0 overflow-hidden rounded-full border-4 border-[#0d2b5c]/10">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7921.JPG-1SfetJKnAI5GPKIDnqu1AnjW5Y0CUH.jpeg"
                     alt="Caleb Dostie, Owner of Dostco Construction"
@@ -205,13 +201,13 @@ export default function HomePage() {
                     className="object-cover object-top"
                   />
                 </div>
-                <div className="text-center md:text-left space-y-3">
-                  <p className="text-sm font-medium text-slate-500 tracking-widest uppercase">Meet the Owner</p>
-                  <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl text-[#0d2b5c]">
+                <div className="text-center sm:text-left space-y-2">
+                  <p className="text-xs font-medium text-[#0d2b5c]/60 tracking-widest uppercase">Meet the Owner</p>
+                  <h2 className="font-[family-name:var(--font-playfair)] text-xl font-bold tracking-tight sm:text-2xl text-[#0d2b5c]">
                     Caleb Dostie
                   </h2>
-                  <p className="text-sm text-slate-600 leading-relaxed tracking-wide max-w-md">
-                    With a passion for quality craftsmanship and years of hands-on experience, Caleb founded Dostco Construction to bring exceptional building services to Maine homeowners. He personally oversees every project to ensure the highest standards are met.
+                  <p className="text-sm text-slate-600 leading-relaxed max-w-sm">
+                    With a passion for quality craftsmanship and years of hands-on experience, Caleb founded Dostco Construction to bring exceptional building services to Maine homeowners.
                   </p>
                 </div>
               </div>
@@ -220,71 +216,65 @@ export default function HomePage() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="w-full py-16 md:py-20 bg-zinc-50">
+        <section id="contact" className="w-full py-14 md:py-16 bg-white">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-3 text-center mb-10">
-              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-[#0d2b5c]">
+            <div className="flex flex-col items-center justify-center space-y-2 text-center mb-8">
+              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl text-[#0d2b5c]">
                 Contact Us
               </h2>
-              <p className="max-w-[600px] text-slate-600 md:text-base leading-relaxed tracking-wide">
-                Ready to start your project? Get in touch with us today for a free consultation.
+              <p className="max-w-[400px] text-slate-600 text-sm md:text-base leading-relaxed">
+                Ready to start your project? Get in touch today.
               </p>
             </div>
-            <div className="mx-auto max-w-2xl">
-              <div className="grid gap-6 md:grid-cols-2">
-                <div className="flex flex-col items-center space-y-2 p-6 border border-slate-200 bg-zinc-50">
-                  <Phone className="h-5 w-5 text-[#0d2b5c]" />
-                  <span className="text-base font-medium text-[#0d2b5c] tracking-wide">207-740-3233</span>
-                </div>
-                <div className="flex flex-col items-center space-y-2 p-6 border border-slate-200 bg-zinc-50">
+            <div className="mx-auto max-w-md">
+              <div className="grid gap-4 sm:grid-cols-2">
+                <a href="tel:207-740-3233" className="flex flex-col items-center space-y-2 p-5 bg-[#0d2b5c] hover:bg-[#0d2b5c]/90 transition-colors rounded-sm">
+                  <Phone className="h-5 w-5 text-white/80" />
+                  <span className="text-sm font-medium text-white">207-740-3233</span>
+                </a>
+                <a href="mailto:Dostcoconstruction@gmail.com" className="flex flex-col items-center space-y-2 p-5 border border-[#0d2b5c] hover:bg-[#0d2b5c]/5 transition-colors rounded-sm">
                   <Mail className="h-5 w-5 text-[#0d2b5c]" />
-                  <span className="text-base font-medium text-[#0d2b5c] tracking-wide">Dostcoconstruction@gmail.com</span>
-                </div>
+                  <span className="text-sm font-medium text-[#0d2b5c]">Email Us</span>
+                </a>
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      {/* Premium Dark Footer */}
-      <footer className="w-full bg-[#0d2b5c] text-white py-12">
+      {/* Footer */}
+      <footer className="w-full bg-[#0d2b5c] text-white py-10">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-8 md:grid-cols-3 items-start">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ATMbAUTJLWuhlKkJV89o8oNvP0aFqE.png"
                 alt="Dostco Construction Logo"
-                width={40}
-                height={40}
-                className="h-10 w-10"
+                width={36}
+                height={36}
+                className="h-9 w-9"
               />
-              <span className="text-lg font-semibold tracking-tight">Dostco Construction</span>
+              <span className="text-base font-semibold tracking-tight">Dostco Construction</span>
             </div>
-            <div className="space-y-3">
-              <h4 className="text-sm font-semibold tracking-wide text-white/90">Contact</h4>
-              <div className="space-y-2">
-                <div className="flex items-center gap-2 text-sm text-white/70">
-                  <Phone className="h-4 w-4" />
-                  <span className="tracking-wide">207-740-3233</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-white/70">
-                  <Mail className="h-4 w-4" />
-                  <span className="tracking-wide">Dostcoconstruction@gmail.com</span>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-3">
-              <h4 className="text-sm font-semibold tracking-wide text-white/90">Follow Us</h4>
+            <div className="flex items-center gap-6 text-sm text-white/70">
+              <a href="tel:207-740-3233" className="hover:text-white transition-colors flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                <span className="hidden sm:inline">207-740-3233</span>
+              </a>
+              <a href="mailto:Dostcoconstruction@gmail.com" className="hover:text-white transition-colors flex items-center gap-2">
+                <Mail className="h-4 w-4" />
+                <span className="hidden sm:inline">Email</span>
+              </a>
               <Link
                 href="https://www.facebook.com/profile.php?id=61570375541854"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+                className="hover:text-white transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="18"
+                  height="18"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -294,12 +284,11 @@ export default function HomePage() {
                 >
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
-                <span className="tracking-wide">Facebook</span>
               </Link>
             </div>
           </div>
-          <div className="mt-8 pt-6 border-t border-white/10">
-            <p className="text-center text-sm text-white/50 tracking-wide">
+          <div className="mt-6 pt-6 border-t border-white/10">
+            <p className="text-center text-xs text-white/50">
               © {new Date().getFullYear()} Dostco Construction. All rights reserved.
             </p>
           </div>
