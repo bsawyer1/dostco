@@ -11,16 +11,16 @@ export default function HomePage() {
     <div className="flex min-h-screen flex-col bg-zinc-50">
       {/* Glassmorphic Header */}
       <header className="fixed top-0 z-50 w-full border-b border-slate-200/50 bg-white/80 backdrop-blur-md">
-        <div className="container flex h-20 items-center justify-between">
+        <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ATMbAUTJLWuhlKkJV89o8oNvP0aFqE.png"
               alt="Dostco Construction Logo"
-              width={50}
-              height={50}
-              className="h-11 w-11"
+              width={44}
+              height={44}
+              className="h-9 w-9"
             />
-            <span className="text-xl font-semibold text-[#0d2b5c] tracking-tight">Dostco Construction</span>
+            <span className="text-lg font-semibold text-[#0d2b5c] tracking-tight">Dostco Construction</span>
           </Link>
           <NavLinks />
           <div className="flex items-center gap-4">
@@ -37,9 +37,9 @@ export default function HomePage() {
         </div>
       </header>
 
-      <main className="flex-1 pt-20">
+      <main className="flex-1 pt-16">
         {/* Hero Section */}
-        <section className="relative min-h-[90vh] flex items-center">
+        <section className="relative h-[75vh] flex items-center">
           <div className="absolute inset-0">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-XpeVigtWKlMloauWoZsZkiLcle80ey.png"
@@ -52,17 +52,17 @@ export default function HomePage() {
           </div>
           <div className="container relative z-10 px-4 md:px-6">
             <div className="max-w-2xl">
-              <h1 className="font-[family-name:var(--font-playfair)] text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1]">
+              <h1 className="font-[family-name:var(--font-playfair)] text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl leading-[1.1]">
                 Quality Construction & Remodeling Services
               </h1>
-              <p className="mt-6 text-lg text-white/90 tracking-wide leading-relaxed md:text-xl max-w-xl">
+              <p className="mt-4 text-base text-white/90 tracking-wide leading-relaxed md:text-lg max-w-xl">
                 Professional construction services for your home or business
               </p>
-              <div className="mt-10">
+              <div className="mt-6">
                 <Link href="#contact">
                   <Button 
                     size="lg"
-                    className="bg-[#0d2b5c] hover:bg-[#0d2b5c]/90 text-white px-8 py-6 text-base font-medium tracking-wide transition-all duration-300 hover:shadow-lg"
+                    className="bg-[#0d2b5c] hover:bg-[#0d2b5c]/90 text-white px-6 py-5 text-sm font-medium tracking-wide transition-all duration-300 hover:shadow-lg"
                   >
                     Start Your Project
                   </Button>
@@ -73,36 +73,36 @@ export default function HomePage() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="w-full py-24 md:py-32 bg-zinc-50">
+        <section id="services" className="w-full py-16 md:py-20 bg-zinc-50">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
-              <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-[#0d2b5c]">
+            <div className="flex flex-col items-center justify-center space-y-3 text-center mb-10">
+              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-[#0d2b5c]">
                 Our Services
               </h2>
-              <p className="max-w-[700px] text-slate-600 md:text-lg leading-relaxed tracking-wide">
+              <p className="max-w-[600px] text-slate-600 md:text-base leading-relaxed tracking-wide">
                 We provide comprehensive construction services to meet all your needs
               </p>
             </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
-              <div className="group flex flex-col items-start space-y-4 p-8 border border-slate-200 bg-white hover:border-slate-300 transition-all duration-300">
-                <Home className="h-8 w-8 text-slate-400 group-hover:text-[#0d2b5c] transition-colors duration-300" />
-                <h3 className="text-xl font-semibold text-[#0d2b5c] tracking-tight">Interior & Exterior Remodeling</h3>
-                <p className="text-slate-600 leading-relaxed tracking-wide">
+            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
+              <div className="group flex flex-col items-start space-y-3 p-6 border border-slate-200 bg-white hover:border-slate-300 transition-all duration-300">
+                <Home className="h-6 w-6 text-slate-400 group-hover:text-[#0d2b5c] transition-colors duration-300" />
+                <h3 className="text-lg font-semibold text-[#0d2b5c] tracking-tight">Interior & Exterior Remodeling</h3>
+                <p className="text-sm text-slate-600 leading-relaxed tracking-wide">
                   Transform your space with our professional remodeling services for both interior and exterior
                   projects.
                 </p>
               </div>
-              <div className="group flex flex-col items-start space-y-4 p-8 border border-slate-200 bg-white hover:border-slate-300 transition-all duration-300">
-                <Building2 className="h-8 w-8 text-slate-400 group-hover:text-[#0d2b5c] transition-colors duration-300" />
-                <h3 className="text-xl font-semibold text-[#0d2b5c] tracking-tight">New Construction</h3>
-                <p className="text-slate-600 leading-relaxed tracking-wide">
+              <div className="group flex flex-col items-start space-y-3 p-6 border border-slate-200 bg-white hover:border-slate-300 transition-all duration-300">
+                <Building2 className="h-6 w-6 text-slate-400 group-hover:text-[#0d2b5c] transition-colors duration-300" />
+                <h3 className="text-lg font-semibold text-[#0d2b5c] tracking-tight">New Construction</h3>
+                <p className="text-sm text-slate-600 leading-relaxed tracking-wide">
                   Build your dream home or business from the ground up with our expert new construction services.
                 </p>
               </div>
-              <div className="group flex flex-col items-start space-y-4 p-8 border border-slate-200 bg-white hover:border-slate-300 transition-all duration-300">
-                <Paintbrush className="h-8 w-8 text-slate-400 group-hover:text-[#0d2b5c] transition-colors duration-300" />
-                <h3 className="text-xl font-semibold text-[#0d2b5c] tracking-tight">Finish Work</h3>
-                <p className="text-slate-600 leading-relaxed tracking-wide">
+              <div className="group flex flex-col items-start space-y-3 p-6 border border-slate-200 bg-white hover:border-slate-300 transition-all duration-300">
+                <Paintbrush className="h-6 w-6 text-slate-400 group-hover:text-[#0d2b5c] transition-colors duration-300" />
+                <h3 className="text-lg font-semibold text-[#0d2b5c] tracking-tight">Finish Work</h3>
+                <p className="text-sm text-slate-600 leading-relaxed tracking-wide">
                   Add the perfect finishing touches to your project with our detailed and precise finish work services.
                 </p>
               </div>
@@ -111,13 +111,13 @@ export default function HomePage() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="w-full py-24 md:py-32 bg-white">
+        <section id="projects" className="w-full py-16 md:py-20 bg-white">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
-              <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-[#0d2b5c]">
+            <div className="flex flex-col items-center justify-center space-y-3 text-center mb-10">
+              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-[#0d2b5c]">
                 Our Projects
               </h2>
-              <p className="max-w-[700px] text-slate-600 md:text-lg leading-relaxed tracking-wide">
+              <p className="max-w-[600px] text-slate-600 md:text-base leading-relaxed tracking-wide">
                 Take a look at some of our recent construction and remodeling projects
               </p>
             </div>
@@ -149,12 +149,12 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            <div className="mt-16 flex justify-center">
+            <div className="mt-10 flex justify-center">
               <Link href="/projects">
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-[#0d2b5c] text-[#0d2b5c] hover:bg-[#0d2b5c] hover:text-white px-10 py-6 text-base font-medium tracking-wide transition-all duration-300"
+                  className="border-[#0d2b5c] text-[#0d2b5c] hover:bg-[#0d2b5c] hover:text-white px-8 py-5 text-sm font-medium tracking-wide transition-all duration-300"
                 >
                   View All Projects
                 </Button>
@@ -164,14 +164,14 @@ export default function HomePage() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="w-full py-24 md:py-32 bg-zinc-50">
+        <section id="about" className="w-full py-16 md:py-20 bg-zinc-50">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-              <div className="space-y-6">
-                <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-[#0d2b5c]">
+            <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
+              <div className="space-y-4">
+                <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-[#0d2b5c]">
                   About Dostco Construction
                 </h2>
-                <p className="text-slate-600 md:text-lg leading-relaxed tracking-wide">
+                <p className="text-slate-600 md:text-base leading-relaxed tracking-wide">
                   Dostco Construction LLC is a leading Maine construction firm specializing in residential remodeling
                   and new construction. We deliver exceptional craftsmanship across interior and exterior renovations,
                   with meticulous attention to detail in every project. Our commitment to excellence, transparent
@@ -193,25 +193,25 @@ export default function HomePage() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="w-full py-24 md:py-32 bg-white">
+        <section id="contact" className="w-full py-16 md:py-20 bg-white">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
-              <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-[#0d2b5c]">
+            <div className="flex flex-col items-center justify-center space-y-3 text-center mb-10">
+              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-[#0d2b5c]">
                 Contact Us
               </h2>
-              <p className="max-w-[700px] text-slate-600 md:text-lg leading-relaxed tracking-wide">
+              <p className="max-w-[600px] text-slate-600 md:text-base leading-relaxed tracking-wide">
                 Ready to start your project? Get in touch with us today for a free consultation.
               </p>
             </div>
             <div className="mx-auto max-w-2xl">
-              <div className="grid gap-8 md:grid-cols-2">
-                <div className="flex flex-col items-center space-y-3 p-8 border border-slate-200 bg-zinc-50">
-                  <Phone className="h-6 w-6 text-[#0d2b5c]" />
-                  <span className="text-lg font-medium text-[#0d2b5c] tracking-wide">207-740-3233</span>
+              <div className="grid gap-6 md:grid-cols-2">
+                <div className="flex flex-col items-center space-y-2 p-6 border border-slate-200 bg-zinc-50">
+                  <Phone className="h-5 w-5 text-[#0d2b5c]" />
+                  <span className="text-base font-medium text-[#0d2b5c] tracking-wide">207-740-3233</span>
                 </div>
-                <div className="flex flex-col items-center space-y-3 p-8 border border-slate-200 bg-zinc-50">
-                  <Mail className="h-6 w-6 text-[#0d2b5c]" />
-                  <span className="text-lg font-medium text-[#0d2b5c] tracking-wide">Dostcoconstruction@gmail.com</span>
+                <div className="flex flex-col items-center space-y-2 p-6 border border-slate-200 bg-zinc-50">
+                  <Mail className="h-5 w-5 text-[#0d2b5c]" />
+                  <span className="text-base font-medium text-[#0d2b5c] tracking-wide">Dostcoconstruction@gmail.com</span>
                 </div>
               </div>
             </div>
@@ -220,39 +220,39 @@ export default function HomePage() {
       </main>
 
       {/* Premium Dark Footer */}
-      <footer className="w-full bg-[#0d2b5c] text-white py-16">
+      <footer className="w-full bg-[#0d2b5c] text-white py-12">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-12 md:grid-cols-3 items-start">
+          <div className="grid gap-8 md:grid-cols-3 items-start">
             <div className="flex items-center gap-3">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ATMbAUTJLWuhlKkJV89o8oNvP0aFqE.png"
                 alt="Dostco Construction Logo"
-                width={48}
-                height={48}
-                className="h-12 w-12"
+                width={40}
+                height={40}
+                className="h-10 w-10"
               />
-              <span className="text-xl font-semibold tracking-tight">Dostco Construction</span>
+              <span className="text-lg font-semibold tracking-tight">Dostco Construction</span>
             </div>
-            <div className="space-y-4">
-              <h4 className="font-semibold tracking-wide text-white/90">Contact</h4>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3 text-white/70">
+            <div className="space-y-3">
+              <h4 className="text-sm font-semibold tracking-wide text-white/90">Contact</h4>
+              <div className="space-y-2">
+                <div className="flex items-center gap-2 text-sm text-white/70">
                   <Phone className="h-4 w-4" />
                   <span className="tracking-wide">207-740-3233</span>
                 </div>
-                <div className="flex items-center gap-3 text-white/70">
+                <div className="flex items-center gap-2 text-sm text-white/70">
                   <Mail className="h-4 w-4" />
                   <span className="tracking-wide">Dostcoconstruction@gmail.com</span>
                 </div>
               </div>
             </div>
-            <div className="space-y-4">
-              <h4 className="font-semibold tracking-wide text-white/90">Follow Us</h4>
+            <div className="space-y-3">
+              <h4 className="text-sm font-semibold tracking-wide text-white/90">Follow Us</h4>
               <Link
                 href="https://www.facebook.com/profile.php?id=61570375541854"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -271,7 +271,7 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="mt-12 pt-8 border-t border-white/10">
+          <div className="mt-8 pt-6 border-t border-white/10">
             <p className="text-center text-sm text-white/50 tracking-wide">
               © {new Date().getFullYear()} Dostco Construction. All rights reserved.
             </p>
