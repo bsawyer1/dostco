@@ -12,16 +12,16 @@ export function MobileNav() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon" className="md:hidden">
-          <Menu className="h-6 w-6" />
+        <Button variant="ghost" size="icon" className="md:hidden text-[#0d2b5c]">
+          <Menu className="h-5 w-5" />
           <span className="sr-only">Toggle menu</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-48">
+      <DropdownMenuContent align="end" className="w-48 bg-white/95 backdrop-blur-md border-slate-200">
         <DropdownMenuItem asChild>
           <Link
             href="#services"
-            className="w-full cursor-pointer"
+            className="w-full cursor-pointer text-[#0d2b5c]"
             onClick={(e) => {
               e.preventDefault()
               handleScroll("#services")
@@ -31,14 +31,14 @@ export function MobileNav() {
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/projects" className="w-full cursor-pointer">
+          <Link href="/projects" className="w-full cursor-pointer text-[#0d2b5c]">
             Projects
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
           <Link
             href="#about"
-            className="w-full cursor-pointer"
+            className="w-full cursor-pointer text-[#0d2b5c]"
             onClick={(e) => {
               e.preventDefault()
               handleScroll("#about")
@@ -50,7 +50,7 @@ export function MobileNav() {
         <DropdownMenuItem asChild>
           <Link
             href="#contact"
-            className="w-full cursor-pointer"
+            className="w-full cursor-pointer text-[#0d2b5c]"
             onClick={(e) => {
               e.preventDefault()
               handleScroll("#contact")

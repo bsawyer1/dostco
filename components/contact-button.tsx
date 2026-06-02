@@ -12,7 +12,12 @@ export function ContactButton() {
 
   return (
     <Link href="/#contact">
-      <Button className="bg-[#0d2c5a] hover:bg-[#1e88e5] text-lg px-8 py-6" onClick={handleClick}>
+      <Button 
+        variant="outline"
+        size="lg"
+        className="border-[#0d2b5c] text-[#0d2b5c] hover:bg-[#0d2b5c] hover:text-white px-10 py-6 text-base font-medium tracking-wide transition-all duration-300" 
+        onClick={handleClick}
+      >
         Contact Us For Your Project
       </Button>
     </Link>
